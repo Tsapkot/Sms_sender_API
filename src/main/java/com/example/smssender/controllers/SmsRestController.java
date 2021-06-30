@@ -34,7 +34,7 @@ public class SmsRestController {
         boolean isSaved = smsService.create(smsDto);
         return new ResponseEntity<>(isSaved ? "OK" : "Error",
                 isSaved
-                        ? HttpStatus.OK
+                        ? HttpStatus.CREATED
                         : HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
