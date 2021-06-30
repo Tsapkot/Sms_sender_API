@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/sms_storage
+    username: sms_api
+    password: duiwqnsd7878989yda
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
